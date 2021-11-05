@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+
+:root {
+    --darkBlue: hsl(240, 38%, 20%);
+    --grayishBlue: hsl(240, 18%, 77%);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main{
+    margin: 0 auto;
+    width: 1110px;
+    height: 550px;
+    background: url("./images/pattern-curve.svg");
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-size: 70%;
+    position: relative;
+    top: 180px;
+    display: flex;
+    justify-content: flex-end;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+
+}
+.container1{
+    width: 45%;
+    background: url("./images/pattern-bg.svg");
+    background-repeat: no-repeat;
+    background-position:top center;
+    background-size: 100%;
+    margin: 60px auto 0;
+    padding: 30px;
+    padding-right: 30px;
+    position: relative;
+    margin-right: 15px;
+}
+.imgbox img{
+    width: 360px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.container1 .imgbox .tanyaPhoto, .johnPhoto{
+    position: relative;
+    margin: 0em auto;
+    margin-right:2em;
+    transition: left 500ms linear;
+}
+
+.container1 .icon{
+    cursor: pointer;
+    position:relative;
+    top: -1.2em;
+    width: 85px;
+    background-color: white;
+    margin: 0em 4em;  
+    display: flex;
+    justify-content: space-around;
+    padding: 0.5em 0.3em; 
+    border-radius: 50px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.prev, .next{
+    width: 9px;
+}
+
+.textBox .quote{
+   margin: 0 auto;
+   padding-top: 0px;
+   width: 14%;
+   position: relative;
+}
+
+.container2{
+    padding-top: 150px;
+    padding-left: 120px;
+    width: 80%;
+    max-width: 750px;
+    font-family: Inter;
+    z-index: 999;
+}
+
+.about p{
+    font-size: 20px;
+    color: var(--darkBlue);
+    font-weight: 300;
+}
+
+.container2 .about, .denotation{
+    position: relative;
+    top: -30px;
+    margin:0;
+    display: flex;
+    width: 100%;
+    padding: 0.3em 0.5em;
+}
+
+.tanyaDenotation h2, .johnDenotation h2{
+    font-size: 0.9em;
+    color: var(--darkBlue);
+    padding-top: 10px;
+    font-weight: 700;
+}
+
+.tanyaDenotation h3, .johnDenotation h3{
+    font-size: 0.8em;
+    font-weight: 500;
+    color: var(--grayishBlue);
+    padding-left: 10px;
+}

@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0 auto;
+    max-width: 420px;
+    background: url("./images/pattern-curve.svg");
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-size: 70%;
+}
+
+.container1{
+    background: url("./images/pattern-bg.svg");
+    background-repeat: no-repeat;
+    background-position:top center;
+    background-size: 97%;
+    margin: 2em auto 0em;
+    padding: 1.9em;
+    width: 90%;
+    max-width: 750px;
+}
+
+.container1 .photoCard{
+  
+    margin: 0em auto;
+    display: flex;
+    width: 95%;
+    max-width: 275px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+
+}
+
+.container1 .photoCard .tanyaPhoto, .johnPhoto{
+    position: relative;
+    margin: 0em auto;
+   min-width: 100%;
+   object-fit: contain;
+   margin-right:2em;
+   transition: left 500ms linear;
+}
+
+  .container1 .icon{
+      position:relative;
+      top: -1.2em;
+      width: 86px;
+      background-color: white;
+      margin: 0em auto;  
+      display: flex;
+      justify-content: space-around;
+      padding: 0.5em 0.4em; 
+      border-radius: 50px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+
+  }
+
+  .icon .prev:hover ,.next:hover{
+       cursor:pointer;
+}
+
+
+
+/*------------2nd Container--------------*/
+.quoteBox{
+    width: 86px;
+    margin: 0em auto;  
+    padding: 0.6em 0.8em; 
+}
+
+.quoteBox .quote{
+    margin: 0 auto;
+   width: 94%;
+   position: relative;
+}
+
+.container2{
+    margin: 1em auto;
+    width: 90%;
+    max-width: 750px;
+    font-family: Inter;
+    z-index: 999;
+}
+.container2 .desciption, .designation{
+    position: relative;
+    top: -2.6em;
+    margin: 0em auto 1.5em;
+    display: flex;
+    width: 100%;
+    padding: 0.3em 0.5em;
+    overflow: hidden;
+}
+
+.container2 .desciption .tanyaDesciption, .johnDesciption,.designation .tanyaDesignation, .johnDesignation{
+    position: relative;
+    margin: 0em auto;
+    margin: 0 auto;
+    min-width: 100%;
+   margin-right:2em;
+   font-size: 1.155rem;
+   text-align: center;
+}
+
+.tanyaDesignation h2, .johnDesignation h2{
+    font-size: 0.89em;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+.tanyaDesignation h3, .johnDesignation h3{
+    font-size: 0.8em;
+    font-weight: 500;
+    color: hsl(240, 18%, 77%);
+    letter-spacing: 1px;
+}
+
+@media screen and (min-width:1070px){
+
+    html{
+        width: 100%;
+        height: 100vh;
+        /* border: 3px solid blue; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    body{
+        width: 100%;
+         max-width: 1260px;
+         background-position:bottom left;
+         background-size: 38%;
+    }
+
+    main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+        
+
+    }
+
+
+    .container1{
+        padding: 2.4em;
+        width: 50%;
+        order:2;
+        background-position:top center;
+        background-size: 95%;
+    }
+
+    .container1 .photoCard{
+        margin-top: 1em;
+        width: 85%;
+        max-width:500px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+
+    }
+
+
+    .container1 .icon{
+        position:relative;
+        top: -1.2em;
+        left: -4.5em;
+        width: 86px;
+        background-color: white;
+        margin: 0em auto;  
+        display: flex;
+        justify-content: space-around;
+        padding: 0.4em 0.4em; 
+        border-radius: 50px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  
+    }
+
+    .container2{
+        position: relative;
+        left:16%;
+        width: 50%;
+        max-height: 350px;
+        padding: 1em 3.4em;
+        order: 1;
+        word-spacing: 1px;
+        z-index: 99;
+    }
+
+
+    .quoteBox{
+        width: 125px;
+        position: relative;
+        left: -20%; 
+    }
+
+    .container2 .desciption .tanyaDesciption, .johnDesciption{
+       font-size: 1.5rem;
+       text-align: left;
+    }
+
+    .designation{
+        margin-top: -1em;
+    }
+    .tanyaDesignation, .johnDesignation{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+    }
+
+    .tanyaDesignation h2, .johnDesignation h2{
+        margin: 0 0.5em;
+        font-size: 0.96em;
+        font-weight: 700;
+    }
+    
+    .tanyaDesignation h3,  .johnDesignation h3{
+        font-size: 0.96em;
+        font-weight: 500;
+        color: hsl(240, 18%, 77%);
+    }
+
+}

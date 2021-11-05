@@ -37,12 +37,12 @@ Ability to hide/show the answer.
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![Снимок экрана (388)](https://user-images.githubusercontent.com/91119416/140551672-b1401d79-f005-4d79-957e-5cd4282c84e3.png)
 
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+
 
 
 ## Our process
